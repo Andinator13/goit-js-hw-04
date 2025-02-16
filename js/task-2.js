@@ -2,11 +2,11 @@ function calcAverageCalories(days) {
 
     let averageCalories = 0;
 
-    for (const day of Object.day.calories(days)) {
+    for (const day of days) {
         averageCalories += day.calories;
     }
 
-    return 
+    return days.length === 0 ? 0 : averageCalories / days.length
 
 }
 
